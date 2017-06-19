@@ -2,9 +2,9 @@
 error_reporting(0);
 include("./vendor/autoload.php");//Include Facebook Graph API
 #Infromation BEGIN
-$appId="983061351796761";
-$appSecret="99dd0f51bacab580bd28d6d7106aff61";
-$pageToken="EAANZBFs6qkBkBAIRCxW7igS6wG1gQHG8jpz8TICSNl2b4KNxkJYZAg23Ib5lZB990PB8sL7ixcJZB9sAdZBGvrYruyQQP0q6i5CtcjYtoZCGbgZA9ZC8xNbvdwp2O1nqKZBfSoZBGIA7U5vMiuKIMrSugrYzw4BszdWC3sSXZBvLP1BEwZDZD";
+$appId="{APPID}";
+$appSecret="{APPSECRET}";
+$pageToken="{ACCESSTOLEN}";
 #Infromation END
 
 #Create Graph API Begin
