@@ -2,9 +2,9 @@
 error_reporting(0);
 include("./vendor/autoload.php");//Include Facebook Graph API
 #Infromation BEGIN
-$appId="{APPID}";
-$appSecret="{APPSECRET}";
-$pageToken="{ACCESSTOLEN}";
+$appId="{AppID}";
+$appSecret="{AppSecret}";
+$pageToken="{AccessToken}";
 #Infromation END
 
 #Create Graph API Begin
@@ -16,16 +16,16 @@ $fb = new Facebook\Facebook([
 #Create Graph API End
 
 #Upload Image Begin
-if ($_FILES["file"]["name"]==""){
+if ($_FILES["img"]["name"]==""){
 	//No Image Upload
 	$data = [
 		'message' => $_POST["content"],
 	];//Just Text Message
 }else{
-	if ($_FILES["file"]["type"]=="image/png" || $_FILES["file"]["type"]=="image/jpeg"){
+	if ($_FILES["img"]["type"]=="image/png" || $_FILES["img"]["type"]=="image/jpeg"){
 		$target_path = "uploads/";//Target directory to upload
-		$target_path .= date("YmdHis").".jpg"/*$_FILES['file']['name']*/;//Name of the target image
-		if(move_uploaded_file($_FILES['file']['tmp_name'],iconv("UTF-8", "big5//TRANSLIT//IGNORE", $target_path ))) {
+		$target_path .= date("YmdHis").".jpg";//Name of the target image
+		if(move_uploaded_file($_FILES['img']['tmp_name'],iconv("UTF-8", "big5//TRANSLIT//IGNORE", $target_path ))) {
 			//upload success
 			$data = [
 				'message' => $_POST["content"],
@@ -47,7 +47,7 @@ if ($_FILES["file"]["name"]==""){
 
 
 #Call Graph to POST Begin
-if ($_FILES["file"]["name"]==""){
+if ($_FILES["img"]["name"]==""){
 	try {
 		$response = $fb->post('/me/feed', $data, $pageToken);
 	} catch(Facebook\Exceptions\FacebookResponseException $e) {
