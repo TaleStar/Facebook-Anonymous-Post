@@ -11,19 +11,19 @@
 
 ![img](http://i.imgur.com/pEjlPqS.png)
 
-+ And go [Dashboard], click [Show] to get the [App Secret]
++ And go [Dashboard](#), click [Show](#) to get the [App Secret](#)
 
 ![img](http://i.imgur.com/VCeM9dC.png)
 
-+ Then you will get 1)App ID 2)App Secret
++ Then you will get (1)App ID (2)App Secret
 
 ![img](http://i.imgur.com/hvRMeqQ.png)
 
-+ Please note that to turn your App be [Public]
++ Please note that to turn your App be [Public](#)
 
 ![img](http://i.imgur.com/ed3S923.png)
 
-+ And the [Access Token], please go [Graph API Explorer](https://developers.facebook.com/tools/explorer)
++ And the [Access Token](#), please go [Graph API Explorer](https://developers.facebook.com/tools/explorer)
 
 ![img](http://i.imgur.com/17rlN6b.png)
 
@@ -31,15 +31,15 @@
 
 ![img](http://i.imgur.com/3j4WctD.png)
 
-+ Click [Get User Access Token]
++ Click [Get User Access Token](#)
 
 ![img](http://i.imgur.com/6CAEegN.png)
 
-+ Click [publish_pages]
++ Click [publish_pages](#)
 
 ![img](http://i.imgur.com/kMf4E6P.png)
 
-+ Click [Get Page Access Token]
++ Click [Get Page Access Token](#)
 
 ![img](http://i.imgur.com/0Sms8Ip.png)
 
@@ -47,22 +47,22 @@
 
 ![img](http://i.imgur.com/qXZHsVS.png)
 
-+ Click [i]
++ Click [i](#)
 
 ![img](http://i.imgur.com/tO9Sxsq.png)
 
-+ Click [Open in Access Token Tool]
++ Click [Open in Access Token Tool](#)
 
 ![img](http://i.imgur.com/5xu8cEa.png)
 
-+ And Click [Extend Access Token]
++ And Click [Extend Access Token](#)
 
 ![img](http://i.imgur.com/ogQzSQe.png)
 
-+ You will get a [Two-Mounth-Expires-AccessToken]
++ You will get a [Two-Mounth-Expires-AccessToken](#)
 
 ![img](http://i.imgur.com/rXGtR9t.png)
 
 
 + Isn't it easy? Do it!
-+ And don't forget to modify the infromation in [post.php]
++ And don't forget to modify the infromation in [post.php](#)
