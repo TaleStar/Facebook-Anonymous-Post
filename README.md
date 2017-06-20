@@ -65,4 +65,4 @@
 
 
 + Isn't it easy? Do it!
-+ And don't forget to modify the infromation in [post.php](#)
++ And don't forget to modify the infromation in [post.php](https://github.com/Kazuko0310/Facebook-Anonymous-Post/blob/master/post.php)
