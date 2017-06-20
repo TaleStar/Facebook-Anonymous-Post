@@ -3,7 +3,7 @@
 
 ![img](http://i.imgur.com/OGvLZGi.png)
 
-+ Click [Get Started]()
++ Click [Get Started](#)
 
 ![img](http://i.imgur.com/jQ9xsoQ.png)
 
