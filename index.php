@@ -29,11 +29,11 @@
 			}else if ($_GET["err"]=="ftp"){
 				echo "<div class=\"ts inverted negative segment\">Your upload file isn't a image, please select a image file.</div>";
 			}else if ($_GET["err"]=="gerr"){
-				echo "<div class=\"ts inverted negative segment\">Graph returned an error: ".$_GET["detail"].", please contact website administrator.</div>";
+				echo "<div class=\"ts inverted negative segment\">Graph returned an error: ".urldecode($_GET["detail"]).", please contact website administrator.</div>";
 			}else if ($_GET["err"]=="serr"){
-				echo "<div class=\"ts inverted negative segment\">Facebook SDK returned an error: ".$_GET["detail"].", please contact website administrator.</div>";
+				echo "<div class=\"ts inverted negative segment\">Facebook SDK returned an error: ".urldecode($_GET["detail"]).", please contact website administrator.</div>";
 			}else if ($_GET["success"]=="yes"){
-				echo "<div class=\"ts inverted positive segment\">Great! Success, the post id is ".$_GET["detail"]."</div>";
+				echo "<div class=\"ts inverted positive segment\">Great! Success, the post id is ".urldecode($_GET["detail"])."</div>";
 			}
 			?>
 			<form action="post.php" method="POST" enctype="multipart/form-data">
