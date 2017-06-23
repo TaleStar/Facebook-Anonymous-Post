@@ -51,20 +51,20 @@ if ($_FILES["img"]["name"]==""){
 	try {
 		$response = $fb->post('/me/feed', $data, $pageToken);
 	} catch(Facebook\Exceptions\FacebookResponseException $e) {
-		header("Location: ./index.php?err=gerr&detail=".$e->getMessage());
+		header("Location: ./index.php?err=gerr&detail=".urlencode($e->getMessage()));
 		exit;
 	} catch(Facebook\Exceptions\FacebookSDKException $e) {
-		header("Location: ./index.php?err=serr&detail=".$e->getMessage());
+		header("Location: ./index.php?err=serr&detail=".urlencode($e->getMessage()));
 		exit;
 	}
 }else{
 	try {
 		$response = $fb->post('/me/photos', $data, $pageToken);
 	} catch(Facebook\Exceptions\FacebookResponseException $e) {
-		header("Location: ./index.php?err=gerr&detail=".$e->getMessage());
+		header("Location: ./index.php?err=gerr&detail=".urlencode($e->getMessage()));
 		exit;
 	} catch(Facebook\Exceptions\FacebookSDKException $e) {
-		header("Location: ./index.php?err=serr&detail=".$e->getMessage());
+		header("Location: ./index.php?err=serr&detail=".urlencode($e->getMessage()));
 		exit;
 	}
 }
@@ -72,4 +72,4 @@ $graphNode = $response->getGraphNode();
 #Call Graph to POST End
 
 #Finish!
-header("Location: ./index.php?success=yes&detail=".$graphNode['id']);
+header("Location: ./index.php?success=yes&detail=".urlencode($graphNode['id']));
